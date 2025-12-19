@@ -1,0 +1,170 @@
+/* =========================================================
+   MENTIONS LÉGALES – STYLE ROCKABILLY (harmonisé)
+   ========================================================= */
+/* RESET LOCAL */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.7;
+
+}
+:root{
+--primary : #30827B;
+}
+/* =============================================
+   CONTENEUR PRINCIPAL
+   ============================================= */
+
+
+.header-box{
+  display: flex;
+  justify-content: center;
+}
+
+.header-brand{
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.header-role{
+  display: flex;
+  align-items: center;
+}
+.section-legal {
+  display: flex;
+  justify-content: center;
+}
+
+.legal-box {
+  width: 100%;
+  max-width: 920px;
+  background: var(--bg-surface);
+  border-radius: var(--radius-card);
+  padding: var(--space-card);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+}
+
+/* =============================================
+   TITRES
+   ============================================= */
+
+.legal-box h1 {
+  font-family: var(--font-title);
+  font-size: var(--h1);
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: var(--space-32);
+  text-shadow: var(--neon-turquoise-soft);
+}
+
+.legal-box h2 {
+  font-family: var(--font-title);
+  font-size: var(--h2);
+  font-weight: 600;
+  margin-top: var(--space-32);
+  margin-bottom: var(--space-12);
+  color: var(--accent);
+  text-shadow: var(--neon-rose-soft);
+}
+
+/* =============================================
+   TEXTE
+   ============================================= */
+
+.legal-box p {
+  font-size: var(--body);
+  color: var(--text-muted);
+  margin-bottom: var(--space-16);
+  line-height: 1.7;
+}
+
+/* =============================================
+   LIENS
+   ============================================= */
+
+.legal-box a {
+  color: var(--primary);
+  font-weight: 600;
+   border-bottom: 1px solid var(--primary);
+  transition: color 0.25s ease, border-color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.legal-box a:hover {
+  color: var(--accent);
+  text-shadow: var(--neon-rose);
+}
+
+.legal-box a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* =============================================
+   LIEN RETOUR
+   ============================================= */
+
+.legal-back {
+  display: inline-block;
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.legal-back:hover {
+  color: var(--primary);
+  text-shadow: var(--neon-turquoise);
+}
+
+.footer-legal{
+  display: flex;
+justify-content: space-between;
+   padding: 16px 40px;
+}
+
+.footer-copy,
+.footer-socials a {
+  color: var(--primary-text);
+  font-size: var(--body);
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+@media (max-width: 900px) {
+
+
+  .legal-box {
+    padding: var(--space-24);
+    text-align: center;
+  }
+
+  .legal-box h1 {
+    font-size: 32px;
+  }
+
+  .legal-box h2 {
+    font-size: 22px;
+  }
+
+
+}
+

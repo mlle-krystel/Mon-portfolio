@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Projet Kasa : application de location immobilière développée avec React. Routage, composants réutilisables et gestion d’état.">
+
+  <!-- SEO et Open Graph -->
+  <meta property="og:title" content="Kasa – Étude de cas | Krystel Drappier">
+  <meta property="og:description" content="Application React pour la location immobilière : SPA, composants réutilisables, routing dynamique et responsive design.">
+  <meta property="og:image" content="./assets/images/kasa/accueil1.png">
+  <meta property="og:url" content="https://mlle-krystel.github.io/portfolio/kasa.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Kasa – Étude de cas</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;600&family=Praise&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/project-pages.css">
+</head>
+
+<body class="project-page">
+  
+  
+
+  <header class="header">
+    <div class="header-box">
+      <a href="index.html" class="header-brand">
+        <span class="header-name">Krystel Drappier</span>
+        <span class="header-role">Intégratrice Web / Front-End</span>
+      </a>
+
+      <nav class="header-nav" aria-label="Navigation principale">
+        <ul class="header-nav-list">
+          <li><a href="index.html#projets">Projets</a></li>
+          <li><a href="index.html#competences">Compétences</a></li>
+          <li><a href="index.html#a-propos">À propos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- NAVIGATION -->
+    <nav class="project-nav" aria-label="Navigation entre projets">
+      <a href="sophie-bluel.html">← Projet précédent</a>
+      <a href="index.html">Retour à la page d'accueil</a>
+      <a href="ohmyfood.html">Projet suivant →</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="project-hero">
+      <div class="project-hero-text">
+        <h1 id="project-hero-kasa-h1" class="project-hero-h1 animate-glow-in"> Kasa — Étude de cas React &amp; architecture SPA</h1>
+
+        <h2 class="project-hero-h2 animate-glow-in delay-1">
+          Application de location immobilière avec routage dynamique
+        </h2>
+
+        <p>
+          Refonte complète du front-end en React avec une architecture SPA moderne.
+          Mise en place d’un routing dynamique, de composants réutilisables et d’une gestion des erreurs, le tout
+          intégré fidèlement à partir de maquettes Figma.
+        </p>
+
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">React Router</span>
+          <span class="project-tag">SCSS</span>
+          <span class="project-tag">SPA</span>
+          <span class="project-tag">Vite</span>
+        </div>
+
+        <div class="project-hero-actions">
+          <a class="btn-primary" href="#resultat">Voir le résultat</a>
+        </div>
+      </div>
+
+      <div class="project-hero-card">
+        <img src="./assets/images/kasa/accueil1.png" alt="Aperçu du site Kasa">
+      </div>
+    </section>
+
+    <!-- SECTION CONTEXTE -->
+    <section class="project-section" aria-labelledby="contexte-kasa">
+      <h2 id="contexte-kasa">Contexte</h2>
+      <p>
+        Kasa est une entreprise de location immobilière entre particuliers souhaitant moderniser son site web existant.
+      </p>
+      <p>
+        L’objectif du projet était de refondre entièrement le front-end sous forme de Single Page Application afin
+        d’améliorer la maintenabilité du code, la navigation et l’expérience utilisateur.
+      </p>
+      <p>
+        Les données des logements sont fournies via un fichier JSON local, simulant une source de données externe. Le
+        site devait être construit à partir de maquettes Figma, avec un respect strict du design et un comportement
+        responsive sur tous les supports.
+      </p>
+      <p>
+        L’enjeu principal était de structurer l’application autour de composants réutilisables, d’un routing dynamique
+        et d’une gestion propre des erreurs et des redirections.
+      </p>
+    </section>
+
+    <!-- SECTION OBJECTIFS -->
+    <section class="project-section">
+      <h2 id="objectifs-kasa">Objectifs</h2>
+      <p>
+        L’objectif de ce projet était de concevoir une Single Page Application complète avec React,
+        en adoptant une architecture claire, modulaire et maintenable, proche des standards
+        utilisés en environnement professionnel.
+      </p>
+      <p>
+        Le site devait permettre l’affichage dynamique des logements à partir de données fournies,
+        avec une navigation fluide entre les pages grâce à un système de routing performant,
+        incluant la gestion des routes dynamiques et des erreurs de navigation.
+      </p>
+      <p>
+        Ce projet avait également pour but de consolider les bases de React, notamment la création
+        et l’organisation de composants réutilisables, la gestion des props et la structuration
+        globale d’une application front-end moderne.
+      </p>
+      <p>
+        Enfin, une attention particulière devait être portée au respect fidèle des maquettes Figma,
+        à l’accessibilité de l’interface et à l’adaptation responsive sur mobile, tablette et desktop,
+        afin de garantir une expérience utilisateur cohérente sur l’ensemble du parcours.
+      </p>
+
+      <div class="project-taglist">
+        <span class="project-tag">Créer une SPA complète en React</span>
+        <span class="project-tag">Implémenter un routing dynamique</span>
+        <span class="project-tag">Construire des composants réutilisables</span>
+        <span class="project-tag">Développer une fiche logement complète</span>
+        <span class="project-tag">Gérer les erreurs et redirections</span>
+      </div>
+    </section>
+
+    <!-- SECTION REALISATIONS -->
+    <section class="project-section">
+      <h2 id="realisations-kasa">Réalisations principales</h2>
+      <p>
+        Le projet a été initialisé avec Vite afin de bénéficier d’un environnement de développement rapide et moderne.
+      </p>
+      <p>
+        J’ai conçu l’architecture de l’application en séparant clairement les pages, les composants, les layouts et les
+        données, afin de garantir une meilleure lisibilité et évolutivité du code.
+      </p>
+      <p>
+        Le routing dynamique a été mis en place avec React Router, incluant la gestion des paramètres d’URL et une page
+        404 pour les routes inexistantes.
+      </p>
+      <p>
+        Plusieurs composants réutilisables ont été développés, tels que les cartes de logements, la galerie d’images,
+        les collapses et le système de notation, permettant une interface cohérente et maintenable.
+      </p>
+      <p>
+        L’ensemble de l’application respecte les maquettes Figma et s’adapte aux différents formats d’écran grâce à une
+        approche responsive.
+      </p>
+
+      <div class="project-taglist">
+        <span class="project-tag">Initialisation du projet avec Vite</span>
+        <span class="project-tag">Architecture pages, composants, data, layout</span>
+        <span class="project-tag">Routing dynamique + page 404</span>
+        <span class="project-tag">Composants clés : Card, Gallery, Collapse, Rating…</span>
+        <span class="project-tag">Responsive fidèle aux maquettes Figma</span>
+      </div>
+    </section>
+
+    <!-- SECTION RÉSULTATS -->
+    <section id="resultat" class="project-section">
+      <h2 id="resultats-kasa">Résultats</h2>
+      <p>
+        Le projet Kasa m’a permis de construire une application en React de A à Z, à partir de maquettes Figma. J’ai structuré l’interface en composants réutilisables (Card, Gallery, Collapse…) et mis en place un système de routing dynamique avec React Router. L’architecture claire et modulaire rend le code facilement maintenable. Résultat : une Single Page Application fluide, responsive, conforme aux maquettes et prête à se connecter à une vraie API. L’expérience utilisateur est également renforcée par la gestion des routes invalides et une page 404 dédiée.
+      </p>
+      <div class="project-taglist">
+        <span class="project-tag">Application scalable &amp; maintenable</span>
+        <span class="project-tag">Navigation fluide &amp; robuste</span>
+        <span class="project-tag">UX moderne &amp; cohérente</span>
+      </div>
+    </section>
+
+    <!-- APERÇUS -->
+    <section class="project-preview" aria-label="Aperçus du projet Kasa">
+      <div class="project-preview-card">
+        <img src="./assets/images/kasa/D_404.png" alt="Page d’erreur 404 du site Kasa">
+      </div>
+
+      <div class="project-preview-card">
+        <img src="./assets/images/kasa/about.png" alt="Page À propos du site Kasa">
+      </div>
+
+      <div class="project-preview-card">
+        <img src="./assets/images/kasa/responsive.png" alt="Page logement Kasa en version mobile">
+      </div>
+    </section>
+
+    <!-- NAVIGATION BAS -->
+    <nav class="project-nav-bas" aria-label="Navigation entre projets bas de page">
+      <a href="sophie-bluel.html">← Projet précédent</a>
+      <a href="index.html">Retour à la page d'accueil</a>
+      <a href="ohmyfood.html">Projet suivant →</a>
+    </nav>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-box">
+      <div class="footer-copy">© 2025 Krystel Drappier</div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/mlle-krystel" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
+      <a href="legale.html">Mentions légales</a>
+    </div>
+  </footer>
+
+  <script src="./js/animations.js" defer></script>
+
+
+</body>
+
+</html>

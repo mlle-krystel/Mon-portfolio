@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Krystel Drappier — Intégratrice Web / Front-End. Découvrez ses projets, compétences et parcours de reconversion dans le développement web."
+    />
+    <meta property="og:title" content="Portfolio de Krystel Drappier" />
+    <meta property="og:image" content="./assets/images/page-portfolio.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>Portfolio – Krystel Drappier</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;600&family=Praise&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="loader-container">
+      <span class="loader-text">Krystel</span>
+    </div>
+
+    <header class="header">
+      <div class="header-box">
+        <div class="header-brand">
+          <span class="header-name">Krystel Drappier</span>
+          <span class="header-role">Intégratrice Web</span>
+        </div>
+        <nav aria-label="Navigation principale">
+          <ul class="header-nav-list">
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-box">
+          <h1 class="hero-title">Portfolio d’intégratrice Web</h1>
+          <h2 class="hero-label" id="hero-title">
+            Bonjour, je suis Krystel Drappier.
+          </h2>
+          <p class="hero-text"></p>
+          <p class="hero-text">
+            Front-end rock’n’code : je conçois des interfaces modernes,
+            accessibles et percutantes — avec soin et sens du détail.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETS PHARES -->
+      <section
+        id="projets"
+        class="section section-projects"
+        aria-labelledby="projets-title"
+      >
+        <div class="section-header">
+          <h2 id="projets-title">Projets phares</h2>
+          <p class="section-intro">
+            Études de cas concrètes réalisées en formation.
+          </p>
+        </div>
+
+        <div id="root-carousel"></div>
+      </section>
+
+      <!-- AUTRES PROJETS -->
+      <section
+        id="autres-projets"
+        class="section section-other-projects"
+        aria-labelledby="autres-projets-title"
+      >
+        <div class="section-header">
+          <h2 id="autres-projets-title">
+            Autres projets réalisés pendant ma formation
+          </h2>
+        </div>
+
+        <div
+          class="carousel carousel-secondary"
+          role="region"
+          aria-label="Carrousel des autres projets"
+        >
+          <div class="carousel-box">
+            <!-- Projet 1 : Booki -->
+            <article class="project-card is-active">
+              <div class="project-card-text">
+                <h2 class="project-card-title">Booki — Intégration HTML/CSS</h2>
+                <p class="project-card-presentation">
+                  Intégration d’une maquette responsive pour une agence de
+                  voyage fictive. Respect des standards HTML5 et CSS3.
+                </p>
+                <ul class="tags" aria-label="Technologies utilisées">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">Responsive</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Projet 2 : Nina Carducci -->
+            <article class="project-card">
+              <div class="project-card-text">
+                <h2 class="project-card-title">
+                  Nina Carducci — Optimisation SEO & performance
+                </h2>
+                <p class="project-card-presentation">
+                  Amélioration des performances, SEO et accessibilité d’un site
+                  de photographe professionnel.
+                </p>
+                <ul class="tags" aria-label="Technologies utilisées">
+                  <li class="tag">Lighthouse</li>
+                  <li class="tag">SEO</li>
+                  <li class="tag">Accessibilité</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Projet 3 : 724Events -->
+            <article class="project-card">
+              <div class="project-card-text">
+                <h2 class="project-card-title">724Events — Débug et tests</h2>
+                <p class="project-card-presentation">
+                  Résolution de bugs JavaScript et mise en place de tests
+                  manuels pour un site événementiel.
+                </p>
+                <ul class="tags" aria-label="Technologies utilisées">
+                  <li class="tag">JavaScript</li>
+                  <li class="tag">Debug</li>
+                  <li class="tag">Tests manuels</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <!-- Contrôles carrousel -->
+          <div class="carousel-controls">
+            <button class="carousel-prev" type="button">←</button>
+            <div class="carousel-dots">
+              <span
+                class="dot is-active"
+                role="presentation"
+                aria-current="step"
+              ></span>
+              <span class="dot" role="presentation"></span>
+              <span class="dot" role="presentation"></span>
+            </div>
+            <button class="carousel-next" type="button">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPÉTENCES -->
+      <section
+        id="competences"
+        class="section section-skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-header">
+          <h2 id="skills-title">Compétences</h2>
+        </div>
+
+        <div class="skills-box">
+          <article class="skill-item">
+            <h2 class="skill-title">Front-End</h2>
+            <p>
+              Intégration fidèle de maquettes responsive en HTML/CSS, avec une
+              attention aux détails et à l'expérience utilisateur.
+            </p>
+            <ul class="tags">
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3</li>
+              <li class="tag">Sass</li>
+              <li class="tag">Responsive</li>
+              <li class="tag">Design system</li>
+            </ul>
+          </article>
+          <article class="skill-item">
+            <h2 class="skill-title">JavaScript & React</h2>
+            <p>
+              Développement d'interfaces dynamiques, manipulation du DOM, appels
+              API, et mise en œuvre de composants React réutilisables.
+            </p>
+            <ul class="tags">
+              <li class="tag">ES6+</li>
+              <li class="tag">API REST</li>
+              <li class="tag">React</li>
+              <li class="tag">React Router</li>
+            </ul>
+          </article>
+          <article class="skill-item">
+            <h2 class="skill-title">Qualité & Méthodologie</h2>
+            <p>
+              Respect des standards d'accessibilité, optimisation SEO &
+              performance, et mise en place de tests manuels.
+            </p>
+            <ul class="tags">
+              <li class="tag">Accessibilité</li>
+              <li class="tag">SEO</li>
+              <li class="tag">Performance</li>
+              <li class="tag">Tests manuels</li>
+              <li class="tag">Git / GitHub</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- À PROPOS -->
+      <section
+        id="a-propos"
+        class="section section-about"
+        aria-labelledby="about-title"
+      >
+        <div class="section-header">
+          <h2 id="about-title" class="about-title">À propos</h2>
+        </div>
+
+        <article class="about-card">
+          <img
+            class="about-avatar"
+            src="./assets/images/Moi/IMG_2791.webp"
+            alt="Photo de Krystel Drappier"
+          />
+
+          <div class="about-content">
+            <h2 class="about-name">Krystel Drappier</h2>
+            <p class="about-role">Intégratrice Web / Front-End</p>
+            <p>
+              Après une reconversion professionnelle, je conçois aujourd’hui des
+              interfaces web accessibles, soignées et faciles à utiliser. Mon
+              objectif : transformer des maquettes en expériences fluides et
+              cohérentes, quel que soit le support.
+            </p>
+
+            <details class="about-details">
+              <summary>Découvrir mon parcours</summary>
+
+              <div class="about-details-content">
+                <h4>Un parcours tourné vers l’accompagnement</h4>
+                <p>
+                  Avant le web, j’ai travaillé plusieurs années comme monitrice
+                  d’auto-école puis esthéticienne. Deux métiers très différents,
+                  mais avec un point commun : être à l’écoute, m’adapter, et
+                  accompagner au mieux chaque personne.
+                </p>
+
+                <h4>Reconversion & formation</h4>
+                <p>
+                  En 2024, j’ai suivi la formation Intégrateur Web chez
+                  OpenClassrooms. J’y ai appris à transformer des maquettes en
+                  sites responsive, à structurer mon code avec HTML, CSS,
+                  JavaScript, et à construire des interfaces dynamiques avec
+                  React.
+                </p>
+
+                <h4>Ce que j’aime dans le front-end</h4>
+                <p>
+                  J’aime créer des interfaces bien pensées, où chaque détail
+                  compte : lisibilité, organisation, interactions,
+                  accessibilité… Le but : que tout fonctionne et soit agréable,
+                  sans effort.
+                </p>
+              </div>
+            </details>
+          </div>
+        </article>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="section section-contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="section-header">
+          <h2 id="contact-title">Contact</h2>
+          <p class="section-intro">
+            Un projet, une mission freelance ? Échangeons ensemble.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <form
+            id="contact-form"
+            class="contact-form"
+            aria-label="Formulaire de contact"
+          >
+            <div class="form-field">
+              <label for="name">Nom</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">M’écrire</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-box">
+        <div class="footer-copy">© 2025 Krystel Drappier</div>
+        <div class="footer-socials">
+          <a href="https://github.com/mlle-krystel">GitHub</a>
+        </div>
+        <a href="legale.html">Mentions légales</a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="js/contact.js" defer></script>
+    <script src="js/loader.js"></script>
+    <script type="module" src="js/carousel-react.js"></script>
+  </body>
+</html>
