@@ -125,7 +125,7 @@ const elements = [
     description: "Portfolio dynamique avec API REST.",
     tags: ["JavaScript", "API", "CRUD"],
     link: "sophie-bluel.html",
-    imageSrc: "./assets/images/sophiebluel/screencapture.png",
+    imageSrc: "./assets/images/sophie_bluel/screencapture.png",
     imageAlt: "Projet Sophie Bluel",
   },
 ];
