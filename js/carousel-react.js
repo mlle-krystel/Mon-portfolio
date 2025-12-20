@@ -1,4 +1,4 @@
-// Carrousel React 
+// Carrousel React
 import React, { useState } from "https://esm.sh/react@18";
 import { createRoot } from "https://esm.sh/react-dom@18/client";
 
@@ -125,7 +125,7 @@ const elements = [
     description: "Portfolio dynamique avec API REST.",
     tags: ["JavaScript", "API", "CRUD"],
     link: "sophie-bluel.html",
-    imageSrc: "./assets/images/sophie_bluel/screencapture.png",
+    imageSrc: "./assets/images/sophie/screencapture.png",
     imageAlt: "Projet Sophie Bluel",
   },
 ];
