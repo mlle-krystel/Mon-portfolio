@@ -859,12 +859,9 @@ button:disabled {
 
 .loader-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+ inset: 0;
   background: linear-gradient(135deg, #ff79da, #99e2d0, #9356dc);
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   z-index: 9999;
@@ -873,10 +870,14 @@ button:disabled {
 .loader-text {
   font-family: "Praise", cursive;
   font-size: 3em;
-  color: #ffffff;
-  animation: trackingIn 1.2s ease-out both;
-  transform: translateZ(0);
-  will-change: transform, opacity;
+  color: var(--accent-text);
+  animation: trackingIn 1s ease-out both;
+}
+
+.loader-container.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* Apparition dynamique */

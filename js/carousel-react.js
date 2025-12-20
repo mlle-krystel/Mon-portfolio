@@ -66,6 +66,7 @@ function Carousel({ elements }) {
               src: el.imageSrc,
               alt: el.imageAlt,
               loading: "lazy",
+              decoding: "async",
             })
           )
         )
@@ -107,7 +108,7 @@ const elements = [
     description: "Refonte en React d’une plateforme de location immobilière.",
     tags: ["React", "SPA", "Router"],
     link: "kasa.html",
-    imageSrc: "./assets/images/kasa/acceuil.png",
+    imageSrc: "./assets/images/kasa/acceuil.webp",
     imageAlt: "Projet Kasa",
   },
   {
@@ -116,7 +117,7 @@ const elements = [
     description: "Intégration mobile-first avec animations CSS.",
     tags: ["HTML", "CSS", "Animations"],
     link: "ohmyfood.html",
-    imageSrc: "./assets/images/ohmyfood/accueil.png",
+    imageSrc: "./assets/images/ohmyfood/accueil.webp",
     imageAlt: "Projet Ohmyfood",
   },
   {
@@ -125,7 +126,7 @@ const elements = [
     description: "Portfolio dynamique avec API REST.",
     tags: ["JavaScript", "API", "CRUD"],
     link: "sophie-bluel.html",
-    imageSrc: "./assets/images/sophie/screencapture.png",
+    imageSrc: "./assets/images/sophie/screenhome.webp",
     imageAlt: "Projet Sophie Bluel",
   },
 ];
