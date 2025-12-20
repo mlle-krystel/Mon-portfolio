@@ -1,4 +1,4 @@
-// Carrousel React — sans JSX, sans npm, sans build
+// Carrousel React 
 import React, { useState } from "https://esm.sh/react@18";
 import { createRoot } from "https://esm.sh/react-dom@18/client";
 

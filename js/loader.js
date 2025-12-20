@@ -1,11 +1,12 @@
-// js/loader.js
 window.addEventListener("load", () => {
   const loader = document.querySelector(".loader-container");
+  if (!loader) return;
 
-  if (loader) {
-    // Attendre un peu pour laisser l’animation visuelle se jouer
+  setTimeout(() => {
+    loader.style.animation = "fadeOut 0.8s ease forwards";
+
     setTimeout(() => {
-      loader.style.animation = "fadeOut 2.5s ease-in-out forwards";
-    }, 1200); // ajustable
-  }
+      loader.style.display = "none";
+    }, 800);
+  }, 1200);
 });

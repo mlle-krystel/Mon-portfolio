@@ -15,7 +15,6 @@ RESET
 
 html,
 body {
-  height: 100%;
   min-height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -74,7 +73,7 @@ ol {
 /* Titres sans marge par défaut */
 h1,
 h2,
-h2,
+h3,
 h4,
 h5,
 h6 {
@@ -140,12 +139,7 @@ table {
   --tag-rose-border: rgba(230, 90, 148, 0.25);
 
   /* HERO GRADIENT */
-  --hero-gradient: linear-gradient(
-    135deg,
-    #4dbdb1 0%,
-    #e65a94 55%,
-    #c62f3a 100%
-  );
+  --hero-gradient: linear-gradient(135deg, #4dbdb1 0%, #e65a94 55%, #c62f3a 100%);
 
   /* FONTS */
   --font-title: "Space Grotesk", system-ui, sans-serif;
@@ -232,7 +226,9 @@ HEADER
   font-size: 24px;
   font-weight: 600;
   color: var(--primary-text);
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.15);
+  text-shadow:
+    0 0 4px rgba(255, 255, 255, 0.7),
+    0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .header-role {
@@ -268,24 +264,14 @@ HEADER
 }
 
 /* BOUTON MENU */
-.menu-btn {
-  display: none;
-  width: 32px;
-  height: 24px;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 
 .btn:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
 
-.menu-line {
-  width: 100%;
-  height: 2px;
-  background: var(--accent);
-}
+
 
 /* =========================================================
 HERO
@@ -321,7 +307,9 @@ HERO
   font-weight: 600;
   color: var(--primary-text);
   margin: var(--space-32);
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.9), var(--neon-turquoise);
+  text-shadow:
+    0 0 4px rgba(255, 255, 255, 0.9),
+    var(--neon-turquoise);
 }
 
 .hero-text {
@@ -340,13 +328,6 @@ HERO
   text-align: center;
 }
 
-.btn-primary {
-  box-shadow: var(--neon-turquoise-soft);
-}
-
-.btn-secondary {
-  box-shadow: var(--neon-rose-soft);
-}
 /* =========================================================
 BOUTONS
    ========================================================= */
@@ -359,8 +340,12 @@ BOUTONS
   border-radius: var(--radius-pill);
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out,
-    background 0.2s ease-out, color 0.2s ease-out, border-color 0.2s ease-out;
+  transition:
+    transform 0.2s ease-out,
+    box-shadow 0.2s ease-out,
+    background 0.2s ease-out,
+    color 0.2s ease-out,
+    border-color 0.2s ease-out;
 }
 
 .btn:hover {
@@ -372,6 +357,7 @@ BOUTONS
   background: #ffffff;
   color: var(--primary-text);
   border: 2px solid var(--primary);
+  box-shadow: var(--neon-turquoise-soft);
 }
 
 .btn-primary:hover {
@@ -383,6 +369,7 @@ BOUTONS
   background: #ffffff;
   color: var(--accent-text);
   border: 2px solid var(--accent);
+   box-shadow: var(--neon-rose-soft);
 }
 
 .btn-secondary:hover {
@@ -400,7 +387,9 @@ BOUTONS
   font-weight: 600;
   color: var(--primary-text);
   margin-bottom: 24px;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9), 0 2px 6px rgba(0, 0, 0, 0.18),
+  text-shadow:
+    0 1px 2px rgba(255, 255, 255, 0.9),
+    0 2px 6px rgba(0, 0, 0, 0.18),
     var(--neon-turquoise);
 }
 
@@ -434,7 +423,9 @@ CARROUSEL PROJETS
   left: 0;
   opacity: 0;
   transform: translateX(16px);
-  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  transition:
+    opacity 0.25s ease-out,
+    transform 0.25s ease-out;
   pointer-events: none;
 }
 
@@ -472,7 +463,10 @@ CARROUSEL PROJETS
   padding: var(--space-8) var(--space-12);
   color: var(--primary-text);
   border-radius: var(--radius-pill);
-  transition: background 0.25s ease, color 0.25s ease, transform 0.1s ease;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.1s ease;
 }
 
 .carousel-prev:hover,
@@ -501,7 +495,9 @@ CARROUSEL PROJETS
   background: var(--tag-turquoise-bg);
   border: 1px solid var(--tag-turquoise-border);
   cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .dot.is-active {
@@ -522,21 +518,20 @@ CARDS (PROJET / SKILL / ABOUT / FORM)
   box-shadow: var(--neon-rose);
   margin-bottom: var(--space-section-small);
 }
+
 .project-card {
-  background: #fff;
   border-radius: var(--radius-card);
   border: 1px solid var(--border-subtle);
   box-shadow: var(--neon-rose);
-  margin-bottom: var(--space-section-small);
-  padding: var(--space-hero-y);
   margin: 20px;
-}
+  padding: var(--space-hero-y);
 
-.project-card {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: var(--space-32);
 }
+
+  
 
 .project-card-text {
   display: flex;
@@ -545,13 +540,13 @@ CARDS (PROJET / SKILL / ABOUT / FORM)
 }
 .project-card-media {
   width: 100%;
-aspect-ratio: 4 / 3;
-max-height: 460px;
+  aspect-ratio: 4 / 3;
+  max-height: 460px;
   border-radius: var(--radius-card);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--border-subtle);
-    background: #fff;
+  background: #fff;
   padding: 8px;
 }
 
@@ -592,10 +587,7 @@ max-height: 460px;
   color: var(--primary-text);
 }
 
-.projects-grid {
-  display: grid;
-  gap: var(--space-32);
-}
+
 
 .section-other-projects .project-card {
   display: flex;
@@ -638,6 +630,12 @@ max-height: 460px;
 /* =========================================================
 ABOUT DETAILS
    ========================================================= */
+
+ .about-details {
+  margin-top: 30px;
+  justify-items: center;
+}
+
 .section-about .about-title {
   margin-bottom: var(--space-48);
 }
@@ -681,9 +679,7 @@ ABOUT DETAILS
   font-weight: 600;
 }
 
-.about-details {
-  margin-top: 30px;
-}
+
 
 .about-details summary {
   font-weight: 700;
@@ -732,16 +728,7 @@ ABOUT DETAILS
   line-height: 1.65;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-4px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 /* =========================================================
  TAGS
@@ -925,8 +912,6 @@ button:disabled {
 RESPONSIVE
    ========================================================= */
 @media (max-width: 1024px) {
-
-
   .project-card {
     display: flex;
     flex-direction: column;
@@ -988,12 +973,6 @@ RESPONSIVE
     margin: 0 25px 15px;
   }
 
-  .project-card {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    text-align: center;
-    padding: 8px;
-  }
 
   .gotoproject {
     left: 0;
@@ -1036,4 +1015,3 @@ RESPONSIVE
     width: 100%;
   }
 }
-

@@ -5,8 +5,14 @@
 
 /* RESET & BASE */
 
+html,
 body {
-  overflow-x: clip;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
   background: #faf0e655;
   font-family: var(--font-body);
   font-size: var(--body);
@@ -122,11 +128,10 @@ body {
   color: var(--accent-red-hover);
 }
 
-.project-page .header-nav-list:focus {
-  outline-offset: 4px;
-  border-radius: 4px;
-  outline: 2px solid yellow;
+.project-page .header-nav-list a:focus-visible {
+  outline: 2px solid var(--accent-red-ui);
 }
+
 
 /* =========================================================
    MAIN
@@ -264,20 +269,13 @@ body {
 
   /* état initial pour animation */
   opacity: 0;
-  transform: translateY(60px);
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* animation déclenchée par JS */
-.project-section.is-visible {
-  animation: fadeInUp 1s ease-out forwards;
-}
 
-.project-page .project-section:nth-of-type(1) {
-  animation-delay: 0.2s;
-}
-.project-page .project-section:nth-of-type(2) {
-  animation-delay: 0.4s;
-}
+
+
 
 .project-page .project-section h2 {
   font-family: var(--font-title);
@@ -293,6 +291,44 @@ body {
   gap: var(--space-24);
   margin-top: var(--space-48);
 }
+
+/* =========================================================
+PROJECT DETAILS (Recul projet)
+========================================================= */
+
+.project-details {
+  margin-top: var(--space-48);
+  color: var(--accent-red-text);
+
+}
+
+.project-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--small);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+    text-shadow: var(--shadow-hero-soft);
+}
+
+.project-details summary::after {
+  content: "▾";
+  font-size: 12px;
+  transition: transform 0.25s ease-out;
+}
+
+.project-details[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+.project-details p {
+  margin-top: var(--space-16);
+  max-width: 720px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 
 /* =========================================================
    PREVIEW
@@ -359,14 +395,14 @@ body {
 /* =========================================================
    ANIMATIONS
    ========================================================= */
-
 /* animation déclenchée par JS */
 .project-section.is-visible {
-  animation: fadeInUp 1s ease-out forwards;
+opacity: 1;
+  transform: translateY(0);
 }
 
 /* glow */
-.animate-glow-in {
+.project-hero-h1.animate-glow-in {
   animation: floatInGlow 0.8s ease-out both;
 }
 
@@ -377,16 +413,7 @@ body {
   animation-delay: 0.6s;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 /* Animation glow (flottement doux avec effet visuel) */
 @keyframes floatInGlow {
@@ -405,6 +432,28 @@ body {
     filter: none;
   }
 }
+
+.project-hero-h2 {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: fadeUpSoft 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.5s;
+}
+
+
+@keyframes fadeUpSoft {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 
 /* =========================================================
    RESPONSIVE
