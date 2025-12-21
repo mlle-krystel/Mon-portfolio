@@ -696,7 +696,7 @@ ABOUT DETAILS
 /* Chevron */
 .about-details summary::after {
   content: "▾";
-  font-size: 14px;
+  font-size: 34px;
   transition: transform 0.25s ease-out;
 }
 
@@ -714,7 +714,7 @@ ABOUT DETAILS
   gap: 16px;
 }
 
-.about-details-content h4 {
+.about-details-content h3 {
   font-family: var(--font-title);
   font-size: var(--h2);
   font-weight: 600;

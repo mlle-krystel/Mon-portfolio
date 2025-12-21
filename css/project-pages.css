@@ -303,18 +303,19 @@ PROJECT DETAILS (Recul projet)
 }
 
 .project-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   font-weight: 600;
   font-size: var(--small);
-  display: inline-flex;
-  align-items: center;
   gap: 6px;
     text-shadow: var(--shadow-hero-soft);
 }
 
 .project-details summary::after {
   content: "▾";
-  font-size: 12px;
+  font-size: 34px;
   transition: transform 0.25s ease-out;
 }
 
@@ -323,8 +324,8 @@ PROJECT DETAILS (Recul projet)
 }
 
 .project-details p {
+  text-align: center;
   margin-top: var(--space-16);
-  max-width: 720px;
   color: var(--text-muted);
   line-height: 1.6;
 }
