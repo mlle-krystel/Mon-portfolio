@@ -3,14 +3,19 @@ import React, { useState } from "https://esm.sh/react@18";
 import { createRoot } from "https://esm.sh/react-dom@18/client";
 
 function Carousel({ elements }) {
+
+  // usestate pour gérer l'index courant
   const [current, setCurrent] = useState(0);
   const total = elements.length;
 
+// !total pour éviter les erreurs si pas d'éléments
   if (!total) return null;
 
+// c = current index
   const goNext = () => setCurrent((c) => (c + 1) % total);
   const goPrev = () => setCurrent((c) => (c - 1 + total) % total);
 
+  // react.createElement pour créer les éléments du carrousel
   return React.createElement(
     "div",
     {
@@ -26,6 +31,7 @@ function Carousel({ elements }) {
         React.createElement(
           "article",
           {
+            // el.id = identifiant unique pour chaque élément
             key: el.id,
             className: `project-card ${i === current ? "is-active" : ""}`,
           },
@@ -45,6 +51,8 @@ function Carousel({ elements }) {
             React.createElement(
               "ul",
               { className: "tags" },
+
+              // el.tag = tableau des tags pour chaque projet
               el.tags.map((t) =>
                 React.createElement("li", { key: t, className: "tag" }, t)
               )
@@ -65,7 +73,9 @@ function Carousel({ elements }) {
             React.createElement("img", {
               src: el.imageSrc,
               alt: el.imageAlt,
+              // loading lazy = pour optimiser le chargement des images
               loading: "lazy",
+              // decoding async = pour améliorer les performances
               decoding: "async",
             })
           )
@@ -132,6 +142,7 @@ const elements = [
 ];
 
 const mountNode = document.getElementById("root-carousel");
+// mountNode = point d'ancrage pour le carrousel React
 if (mountNode) {
   createRoot(mountNode).render(React.createElement(Carousel, { elements }));
 }

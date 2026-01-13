@@ -296,7 +296,7 @@ HERO
 
 .hero-label {
   font-family: var(--font-accent);
-  font-size: var(--h2);
+  font-size: var(--h1);
   color: var(--accent-text);
   margin-bottom: var(--space-16);
 }
